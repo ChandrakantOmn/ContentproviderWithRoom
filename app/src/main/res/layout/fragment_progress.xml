@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5c1b6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProgressFragment">
+
+
+    <TextView
+        android:id="@+id/textCounter2"
+        android:layout_margin="8dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:textAlignment="viewStart"
+        android:text="Software Update"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+    <TextView
+        android:id="@+id/textCounter1"
+        android:layout_margin="8dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textCounter2"
+        android:textAlignment="viewStart"
+        android:text="Your device is being updated with new software "
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+    <TextView
+        android:id="@+id/textCounter0"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textCounter1"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:textAlignment="viewStart"
+        android:text="Please Wait"
+        android:fontFamily="sans-serif-thin"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+    <TextView
+        android:id="@+id/textCounter"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textCounter0"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:textAlignment="viewStart"
+        android:text="Please Wait"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:gravity="center"
+        tools:ignore="RtlCompat" />
+
+    <ProgressBar
+        android:progressDrawable="@drawable/green_progress_drawable"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="24dp"
+        android:layout_below="@+id/textCounter"
+        android:progress="0"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--
+        <ProgressBar
+            android:progressDrawable="@drawable/green_progress_drawable"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/mf_progress_bar"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="8%"
+            app:layout_marginTopPercent="5%"
+            android:layout_gravity="center_horizontal"
+            />
+    -->
+
+</RelativeLayout>
